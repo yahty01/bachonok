@@ -24,10 +24,14 @@ export const Project = (props: ProjectPropsType) => {
 
 const StyledProject = styled.div`
 	background-color: darkolivegreen;
+	max-width: 330px;
+	width: 100%;
 `
 
 const Img = styled.img`
-
+	width: 100%;
+	height: 201px;
+	object-fit: cover;
 `
 
 const Title = styled.h3` 

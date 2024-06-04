@@ -17,7 +17,7 @@ export const Projects = () => {
 				<Link>View all</Link>
 			</FlexWrapper>
 
-			<FlexWrapper alignItems="center" justifyContent="center" gap={'16px'}>
+			<FlexWrapper alignItems="flex-start" justifyContent="center" gap={'16px'}>
 				<Project src={projectOne} frameworks={'HTML SCSS Python Flask'} title={'ChertNodes'}
 				         description={'Minecraft servers hosting'}/>
 				<Project src={projectTwo} frameworks={'React Express Discord.js Node.js HTML SCSS Python Flask'}
