@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {SmallText} from "../../../../components/SmallText";
 
 type SkillPropsType = {
 	title: string;
@@ -10,7 +11,7 @@ export const Skill = (props: SkillPropsType) => {
 	return (
 		<StyledSkill>
 			<SkillTitle>{props.title}</SkillTitle>
-			<SkillText>{props.description}</SkillText>
+			<SmallText>{props.description}</SmallText>
 		</StyledSkill>
 	);
 };
@@ -26,8 +27,3 @@ const StyledSkill = styled.div`
 export const SkillTitle = styled.h3`
 
 `
-
-export const SkillText = styled.p`
-
-`
-
