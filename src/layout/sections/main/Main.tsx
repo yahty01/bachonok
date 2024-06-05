@@ -1,7 +1,8 @@
 import React from 'react';
-import photo from '../../../assets/img/men-two.webp'
+import photo from '../../../assets/img/men-one.webp'
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {Button} from "../../../components/Button";
 
 export const Main = () => {
     return (
@@ -10,7 +11,7 @@ export const Main = () => {
                 <div>
                     <h1>Elias is a web designer and front-end developer</h1>
                     <h2>He crafts responsive websites where technologies meet creativity</h2>
-                    <button>Contact me!!</button>
+                    <Button>Contact me!!</Button>
                 </div>
                 <FlexWrapper justifyContent={'space-between'} flexDirection={'column'} alignItems={'center'}>
                     <Photo src={photo} alt=''/>
