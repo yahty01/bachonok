@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
-import Icon from "../../components/icon/Icon";
 import {Logo} from "../../components/logo/Logo";
-import {Menu} from "../../components/menu/Menu";
 import {Container} from "../../components/Container";
-import {Button} from "../../components/Button";
+import {HeaderMenu} from "./header-menu/HeaderMenu";
 
 const headerItems = ['home', 'works', 'about-me', 'contacts']
 
@@ -12,24 +10,22 @@ export const Header = () => {
 	return (
 		<StyledHeader as={'header'}>
 			<Logo/>
-			<Menu menuItems={headerItems}/>
-			<SelectLanguage>
-				EN
-				<Button>
-					<Icon iconId={`Selector-not-open`} width='10' height='7' viewBox='0 0 10 7'/>
-				</Button>
-			</SelectLanguage>
+			<HeaderMenu menuItems={headerItems}/>
 		</StyledHeader>
 	);
 };
 
 const StyledHeader = styled(Container)`
+	background-color: transparent;
   display: flex;
   justify-content: space-between;
-`
-
-const SelectLanguage = styled.div`
-
+  padding: 32px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+	z-index: 666;
+	height: 61px;
 `
 
 

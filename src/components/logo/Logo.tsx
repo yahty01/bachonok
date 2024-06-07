@@ -1,24 +1,27 @@
 import React from 'react';
 import styled from "styled-components";
 import Icon from "../icon/Icon";
+import {theme} from "../../styles/theme";
 
 export const Logo = () => {
     return (
         <StyledLogo>
             <StyledIcon href="">
-                <Icon iconId={`Logo-white`} width='52' height='52' viewBox='0 0 52 52'/>
+                <Icon iconId={`Logo-white`} width='32' height='32' viewBox='0 0 32 32'/>
             </StyledIcon>
-            <span>Elias</span>
+            <NameText>Egor Savelev</NameText>
         </StyledLogo>
     );
 };
 
 const StyledLogo = styled.div`
-
+  display: flex;
 `
 
-const StyledIcon = styled.a`
-    margin: 10px;
-`
+const StyledIcon = styled.a``
 
+const NameText = styled.span`
+  color: ${theme.colors.text};
+  
+`
 
