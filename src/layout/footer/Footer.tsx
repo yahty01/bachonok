@@ -22,7 +22,7 @@ export const Footer = () => {
 						<Icon iconId={'Figma'} height={'20px'} width={'20px'} viewBox={'0 0 20 20'}/>
 					</SocialItem>
 					<SocialItem>
-						<Icon iconId={'Dribble'} height={'20px'} width={'20px'} viewBox={'0 0 20 20'} />
+						<Icon iconId={'Discord'} height={'20px'} width={'20px'} viewBox={'0 0 20 20'} />
 					</SocialItem>
 				</SocialList>
 			</FlexWrapper>
@@ -34,7 +34,6 @@ const StyledFooter = styled.footer`
 	display: flex;
 	justify-content: space-between;
   min-height: 15vh;
-  background-color: darkcyan;
 `
 
 const SocialList = styled.ul`

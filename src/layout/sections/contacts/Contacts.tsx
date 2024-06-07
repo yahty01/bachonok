@@ -22,7 +22,7 @@ export const Contacts = () => {
 							<Icon iconId={'Github'} height={'20px'} width={'20px'} viewBox={'0 0 20 20'}/>
 						</SocialItem>
 						<SocialItem>
-							<Icon iconId={'Figma'} height={'20px'} width={'20px'} viewBox={'0 0 20 20'}/>
+							<Icon iconId={'Discord'} height={'20px'} width={'20px'} viewBox={'0 0 20 20'}/>
 						</SocialItem>
 					</SocialList>
 
@@ -33,8 +33,7 @@ export const Contacts = () => {
 	);
 };
 
-const StyledContacts = styled.div`
-  background-color: darkolivegreen;
+const StyledContacts = styled.section`
   min-height: 60vh;
 `
 
