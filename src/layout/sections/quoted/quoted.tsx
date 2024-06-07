@@ -14,7 +14,6 @@ export const Quoted = () => {
 
 const StyledQuoted = styled.section`
   min-height: 30vh;
-  background-color: #282C33;
 
   blockquote {
     display: flex;

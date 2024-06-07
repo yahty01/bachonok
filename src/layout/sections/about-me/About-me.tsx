@@ -32,7 +32,6 @@ export const AboutMe = () => {
 
 const StyledAboutMe = styled.section`
   min-height: 60vh;
-  background-color: #282C33;
   color: #ABB2BF;
 `
 const TextArea = styled.p`

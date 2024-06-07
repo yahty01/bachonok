@@ -30,7 +30,6 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  background-color: orange;
   min-height: 365px;
 `
 const StyledBackground = styled.div`
