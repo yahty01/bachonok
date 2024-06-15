@@ -27,9 +27,9 @@ export const HeaderMenu = (props: { menuItems: Array<string> }) => {
 					}
 				</ul>
 				<SelectLanguage>
-					<Button>
+					<HeaderButton>
 						<ButtonText>EN</ButtonText><Icon iconId={`Selector-not-open`} width='10' height='7' viewBox='0 0 10 7'/>
-					</Button>
+					</HeaderButton>
 				</SelectLanguage>
 			</FlexWrapper>
 		</StyledHeaderMenu>
@@ -127,9 +127,18 @@ const ButtonText = styled.span`
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-	margin-right: 8px;
+	margin-right: 4px;
 	
 	&:hover {
 		cursor: pointer;
+	}
+`
+const HeaderButton = styled.button`
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	svg	 {
+		margin-bottom: 1px;
 	}
 `

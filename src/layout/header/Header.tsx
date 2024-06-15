@@ -19,7 +19,7 @@ const StyledHeader = styled(Container)`
 	background-color: transparent;
   display: flex;
   justify-content: space-between;
-  padding: 32px 0;
+  padding: 32px 0 8px 0;
   //position: fixed;
   //top: 0;
   //left: 0;
