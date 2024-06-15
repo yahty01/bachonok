@@ -133,5 +133,3 @@ const ButtonText = styled.span`
 		cursor: pointer;
 	}
 `
-
-

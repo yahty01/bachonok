@@ -1,5 +1,6 @@
 import React from 'react';
 import iconsSprite from '../../assets/img/icons-sprite.svg'
+import styled from "styled-components";
 
 type IconProps = {
     iconId: string,
@@ -10,10 +11,12 @@ type IconProps = {
 
 const Icon = (props: IconProps) => {
     return (
-        <svg width={props.width || "32"} height={props.height || "32"} viewBox={props.width || "0 0 32 32"} fill="none" xmlns="http://www.w3.org/2000/svg">
+        <StyledIcon width={props.width || "32"} height={props.height || "32"} viewBox={props.width || "0 0 32 32"} fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlinkHref={ `${iconsSprite}#${props.iconId}` }/>
-        </svg>
+        </StyledIcon>
         );
 };
 
 export default Icon;
+
+const StyledIcon = styled.svg``

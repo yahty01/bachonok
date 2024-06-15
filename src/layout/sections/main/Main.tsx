@@ -3,6 +3,7 @@ import photo from '../../../assets/img/men-one.webp'
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Button} from "../../../components/Button";
+import Icon from "../../../components/icon/Icon";
 
 export const Main = () => {
     return (
@@ -16,6 +17,7 @@ export const Main = () => {
                 <FlexWrapper justifyContent={'space-between'} flexDirection={'column'} alignItems={'center'}>
                     <Photo src={photo} alt=''/>
                     <span>Currently working on Portfolio</span>
+                    <Icon iconId={`Discord`} width='64' height='64' viewBox='0 0 64 64'/>
                 </FlexWrapper>
             </FlexWrapper>
         </StyledMain>
