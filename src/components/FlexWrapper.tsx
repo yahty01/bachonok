@@ -10,7 +10,8 @@ type FlexWrapperPropsType = {
     rowGap?: string,
     columnGap?: string,
     width?: string,
-    maxWidth?: string
+    maxWidth?: string,
+    height?: string
 }
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
@@ -25,4 +26,5 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     column-gap: ${props => props.columnGap};
     width: ${props => props.width};
     max-width: ${props => props.maxWidth};
+    height: ${props => props.height};
 `
