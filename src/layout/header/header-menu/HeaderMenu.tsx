@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../../styles/theme";
-import {Button} from "../../../components/Button";
 import Icon from "../../../components/icon/Icon";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Link} from "../../../components/Link";
@@ -40,13 +39,15 @@ const ColorHash = styled.span`
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-	
+
 `
 
 const HeaderLink = styled(Link)`
   color: transparent;
 
-  ${ColorHash} {color: transparent}
+  ${ColorHash} {
+    color: transparent
+  }
 `
 const Mask = styled.span`
   position: absolute;
@@ -55,26 +56,26 @@ const Mask = styled.span`
   display: inline-block;
   height: 50%;
   overflow: hidden;
-	color: ${theme.colors.stroke};
-	
-	& + & {
-		top: 50%;
-		
-		span {
-			display: inline-block;
-			transform: translateY(-50%);
-		}
-    
-		span > ${ColorHash} {
-			display: inline-block;
+  color: ${theme.colors.stroke};
+
+  & + & {
+    top: 50%;
+
+    span {
+      display: inline-block;
+      transform: translateY(-50%);
+    }
+
+    span > ${ColorHash} {
+      display: inline-block;
       transform: translateY(0%);
       color: ${theme.colors.accent};
-		}
-	}
-	
-	${ColorHash} {
+    }
+  }
+
+  ${ColorHash} {
     color: ${theme.colors.accent};
-	}
+  }
 `
 
 const StyledHeaderMenu = styled.nav`
@@ -94,32 +95,34 @@ const SelectLanguage = styled.div`
 
 const ListItem = styled.li`
   position: relative;
-	&::before {
-		content: '';
-		display: inline-block;
-		height: 1px;
-		background-color: ${theme.colors.accent};
-		position: absolute;
-		top: 50%;
-		left: -5px;
-		right: -5px;
-		z-index: 1;
-		transform: scale(0);
-	}
-	
-	&:hover{
-		&::before{
-			transform: scale(1);
-		}
-		
-		${Mask} {
-			transform: skewX(10deg) translateX(3px);
-			color: ${theme.colors.text};
-			& + ${Mask} {
+
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    background-color: ${theme.colors.accent};
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    right: -5px;
+    z-index: 1;
+    transform: scale(0);
+  }
+
+  &:hover {
+    &::before {
+      transform: scale(1);
+    }
+
+    ${Mask} {
+      transform: skewX(10deg) translateX(3px);
+      color: ${theme.colors.text};
+
+      & + ${Mask} {
         transform: skewX(10deg) translateX(-3px);
-			}
-		}
-	}
+      }
+    }
+  }
 `
 
 const ButtonText = styled.span`
@@ -127,18 +130,19 @@ const ButtonText = styled.span`
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-	margin-right: 4px;
-	
-	&:hover {
-		cursor: pointer;
-	}
+  margin-right: 4px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `
 const HeaderButton = styled.button`
-  display: flex;
-	justify-content: center;
-	align-items: center;
-	
-	svg	 {
-		margin-bottom: 1px;
-	}
-`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      margin-bottom: 1px;
+    }
+	`
+

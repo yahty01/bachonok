@@ -8,6 +8,7 @@ import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/theme";
 import {SmallText} from "../../../components/SmallText";
 import {ColoredText} from "../../../components/ColoredText";
+import pseudoIcon from "../../../assets/img/Style=Outline.svg";
 
 export const Main = () => {
 	return (
@@ -23,7 +24,9 @@ export const Main = () => {
 				</div>
 
 				<FlexWrapper justifyContent={'space-between'} flexDirection={'column'} alignItems={'center'}>
-					<Photo src={photo} alt=''/>
+					<PhotoWrapper>
+						<Photo src={photo} alt=''/>
+					</PhotoWrapper>
 					<WorkingNow>
 						<Icon iconId={'Rectangle'} width={'16px'} height={'16px'} viewBox={'0 0 16 16'}/>
 						<ColoredText color={theme.colors.stroke}>
@@ -47,6 +50,19 @@ const Photo = styled.img`
   width: 457px;
   height: 100%;
   object-fit: cover;
+`
+
+const PhotoWrapper = styled.div`
+  position: relative;
+
+  &::before {
+    background-image: url(${pseudoIcon});
+	  background-size: cover;
+	  background-repeat: no-repeat;
+    height: 150px;
+    width: 150px;
+	  z-index: 9;
+  }
 `
 const MainText = styled.h1`
   font-size: 32px;
