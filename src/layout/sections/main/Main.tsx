@@ -8,7 +8,6 @@ import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/theme";
 import {SmallText} from "../../../components/SmallText";
 import {ColoredText} from "../../../components/ColoredText";
-import pseudoIcon from "../../../assets/img/Style=Outline.svg";
 
 export const Main = () => {
 	return (
@@ -42,28 +41,19 @@ export const Main = () => {
 };
 
 const StyledMain = styled(Container)`
-  border: darkolivegreen solid 1px;
   margin-top: 52px;
 `
-
+const PhotoWrapper = styled.div`
+  position: relative;
+	border: red solid 1px;
+`
 const Photo = styled.img`
   width: 457px;
   height: 100%;
   object-fit: cover;
 `
 
-const PhotoWrapper = styled.div`
-  position: relative;
 
-  &::before {
-    background-image: url(${pseudoIcon});
-	  background-size: cover;
-	  background-repeat: no-repeat;
-    height: 150px;
-    width: 150px;
-	  z-index: 9;
-  }
-`
 const MainText = styled.h1`
   font-size: 32px;
   font-weight: 600;
