@@ -17,7 +17,7 @@ export const Main = () => {
 					<MainText>Egor Savelev is a <AccentText>front-end developer</AccentText></MainText><br/>
 					<MainSmallText>
 						Experienced with modern frameworks and libraries, always looking to improve user experience and
-						performance. s
+						performance.
 					</MainSmallText>
 					<Button>Contact me!!</Button>
 				</div>
