@@ -46,7 +46,7 @@
 
 1. В панели Supabase перейдите в **Authentication** → **Settings**
 2. В разделе **Site URL** добавьте:
-   ```
+   ```x
    http://localhost:3000
    ```
 3. В разделе **Redirect URLs** добавьте:
