@@ -1,0 +1,77 @@
+# Технологический стек разработки
+
+## Основные технологии
+- **Frontend Framework**: Next.js с App Router и React 19
+- **Backend/Database**: Supabase (PostgreSQL + Auth + Storage)
+- **IDE Integration**: Cursor MCP для Supabase
+- **Styling**: TailwindCSS + shadcn/ui
+- **Deployment**: Vercel + Supabase
+
+## 1. Frontend (Next.js)
+**Назначение**: Пользовательский интерфейс и маршрутизация
+**Возможности**:
+- Server-Side Rendering (SSR) для SEO
+- Static Site Generation (SSG) для производительности
+- Incremental Static Regeneration (ISR)
+- API Routes для backend логики
+
+## 2. Backend и База данных (Supabase)
+**Компоненты**:
+- **PostgreSQL**: Основная база данных
+- **Authentication**: Система авторизации (email/password, OAuth, magic links)
+- **Storage**: Хранение файлов и медиа
+- **Edge Functions**: Серверная логика (опционально)
+
+## 3. Интеграция с IDE (Cursor MCP)
+**Функции**:
+- Автогенерация TypeScript типов из схемы БД
+- Управление таблицами и миграциями из IDE
+- Ускорение разработки через автоматизацию
+
+## 4. API Layer
+**Реализация**: Next.js API Routes (`app/api/`)
+**Функции**:
+- Middleware между клиентом и Supabase
+- Бизнес-логика и валидация
+- Защита маршрутов
+- Агрегация Supabase запросов
+
+## 5. UI Components
+**Стек**:
+- **React**: Основная библиотека UI
+- **TailwindCSS**: Utility-first CSS фреймворк
+- **shadcn/ui**: Готовые компоненты на базе Radix UI
+
+## 6. Аутентификация
+**Провайдер**: Supabase Auth
+**Методы**:
+- Email/Password
+- Magic Links
+- OAuth провайдеры
+- Role-Based Access Control (RBAC)
+
+## 7. Файловое хранилище
+**Сервис**: Supabase Storage
+**Возможности**:
+- Загрузка изображений и документов
+- Приватные и публичные файлы
+- Подписанные URL для доступа
+
+## 8. Развертывание
+**Frontend**: Vercel
+- CI/CD интеграция с GitHub
+- Управление environment переменными
+- Автоматические деплои
+
+**Backend**: Supabase SaaS
+- Управляемая база данных
+- Встроенная авторизация
+- Файловое хранилище
+
+## 9. Тестирование
+**Инструменты**: Jest + React Testing Library
+**Типы тестов**:
+- Unit тесты для UI компонентов
+- Integration тесты для API
+- Тесты аутентификации и работы с БД
+
