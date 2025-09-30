@@ -1,21 +1,26 @@
 #!/bin/bash
 
-echo "🚀 Setting up Portfolio App..."
+# Скрипт для первоначальной настройки проекта
+echo "🚀 Setting up Bochonok App..."
 
-# Check if .env.local exists
+# Проверяем, существует ли файл .env.local
 if [ ! -f .env.local ]; then
+    # Если .env.local не найден, создаём его на основе шаблона
     echo "📝 Creating .env.local from template..."
-    cp .env.local.example .env.local
+    cp env.example .env.local
     echo "✅ .env.local created. Please edit it with your Supabase credentials."
 else
+    # Если файл уже существует, уведомляем пользователя
     echo "⚠️  .env.local already exists."
 fi
 
-# Install dependencies if node_modules doesn't exist
+# Проверяем, установлены ли зависимости (наличие папки node_modules)
 if [ ! -d node_modules ]; then
+    # Если зависимости не установлены, запускаем установку через npm
     echo "📦 Installing dependencies..."
     npm install
 else
+    # Если зависимости уже установлены, уведомляем пользователя
     echo "✅ Dependencies already installed."
 fi
 

@@ -44,7 +44,7 @@ export default async function Home() {
         <div className="flex justify-between items-center mb-8">
           <div>
             <h1 className="text-4xl font-bold text-gray-900 mb-2">
-              Добро пожаловать в Portfolio App! 🎉
+              Добро пожаловать в Bochonok! 💰
             </h1>
             <p className="text-xl text-gray-600">
               Supabase успешно подключен и работает

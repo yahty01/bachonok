@@ -66,7 +66,7 @@ export default function Login() {
             {isSignUp ? 'Создать аккаунт' : 'Войти в аккаунт'}
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
-            Portfolio App - Тестирование Supabase
+            Bochonok - Управление личным бюджетом
           </p>
         </div>
         

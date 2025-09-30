@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio - Next.js + Supabase",
-  description: "A modern portfolio application built with Next.js and Supabase",
+  title: "Bochonok - Управление личным бюджетом",
+  description: "Современное приложение для ведения личного бюджета, построенное на Next.js и Supabase",
 };
 
 export default function RootLayout({
@@ -31,7 +31,7 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center py-4">
               <h1 className="text-xl font-semibold text-gray-900">
-                Portfolio App
+                Bochonok
               </h1>
             </div>
           </div>

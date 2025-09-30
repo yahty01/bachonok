@@ -1,6 +1,6 @@
 # 🤝 Руководство по контрибуции
 
-Спасибо за интерес к улучшению Portfolio App! Это руководство поможет вам внести вклад в проект.
+Спасибо за интерес к улучшению Bochonok! Это руководство поможет вам внести вклад в проект.
 
 ## 🚀 Быстрый старт для контрибьюторов
 
@@ -11,11 +11,11 @@
 ```bash
 # Форкните репозиторий на GitHub
 # Затем клонируйте ваш форк
-git clone https://github.com/YOUR_USERNAME/portfolio.git
-cd portfolio
+git clone https://github.com/YOUR_USERNAME/bochonok.git
+cd bochonok
 
 # Добавьте upstream remote
-git remote add upstream https://github.com/original-repo/portfolio.git
+git remote add upstream https://github.com/original-repo/bochonok.git
 ```
 
 ### 3. Создание ветки
@@ -206,6 +206,6 @@ src/components/
 
 ---
 
-**Спасибо за ваш вклад в Portfolio App! 🚀**
+**Спасибо за ваш вклад в Bochonok! 🚀**
 
 *Последнее обновление: ${new Date().toLocaleDateString('ru-RU')}*
